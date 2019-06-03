@@ -1,12 +1,15 @@
-void renderBanner(){
-        final boolean p = platform.toUpperCase().indexOf("MAC") > -1;
-        final boolean q = browser.toUpperCase().indexOf("IE") > -1;
-        final boolean r = wasInitialized();
-        final boolean s = resize > 0;
+package composing;
+
+public class renderBanner{
+    public renderBanner(){
+        final boolean isMacOS = platform.toUpperCase().indexOf("MAC") > -1;
+        final boolean isIE = browser.toUpperCase().indexOf("IE") > -1;
+        final boolean wasResised = resize > 0;
 
 
-        if(p && q && r && s)
+        if(isMacOS && isIE && wasInitialized() && wasResised)
         {
             // do something
         }
+    }
 }
